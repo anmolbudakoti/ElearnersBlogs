@@ -1,0 +1,376 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Eternity Learners - School of Learners</title>
+    <link rel="shortcut icon" href="channels4_profile.jpg" type="image/x-icon">
+    <style>
+        .carousel-inner img {
+            height: 512px;
+            width: 100%;
+        }
+
+        .carousel-caption {
+            background-color: rgba(80, 73, 73, 0.562);
+            border-radius: 5px;
+        }
+
+        .Main {
+            background-color: rgb(0, 0, 0);
+        }
+
+        .text-body-emphasis {
+            color: white;
+        }
+    </style>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="Main">
+
+        <!-- Navigation bar -->
+        <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
+            <a class="navbar-brand" href="index.html">Eternity Learners</a>
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
+                data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="services.html" id="dropdownId" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Services</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                            <a class="dropdown-item" href="courses.html">Courses</a>
+                            <a class="dropdown-item" href="music-production.html">Music Production</a>
+                            <a class="dropdown-item" href="mixing-mastering.html">Mixing & mastering</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="something-else-form.html">Something Else</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+                <div class="mx-2">
+                    <!-- Login trigger modal -->
+                    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#loginModal">
+                        Login
+                    </button>
+
+                    <!--Login Modal -->
+                    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title fs-5" id="loginModalLabel">Login to Eternity Learners</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                            aria-hidden="true">&times;</span></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="mb-3">
+                                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                                aria-describedby="emailHelp">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                                            <input type="password" class="form-control" id="exampleInputPassword1">
+                                        </div>
+                                        <div class="mb-3 form-check">
+                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                            <label class="form-check-label" for="exampleCheck1">Remember me</label>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Sign Up trigger modal -->
+            <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#signupModal">
+                Sign up
+            </button>
+
+            <!--Sign Up Modal -->
+            <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title fs-5" id="signupModalLabel">Be a Part of Learners family</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                    aria-hidden="true">&times;</span></button>
+                        </div>
+                        <div class="modal-body">
+                            <form class="d-flex flex-column justify-content-between px-5">
+                                <div class="pb-3">
+                                    <label for="validationDefault01" class="form-label">First name:</label>
+                                    <input type="text" class="form-control" id="validationDefault01" required>
+                                </div>
+                                <div class="pb-3">
+                                    <label for="validationDefault02" class="form-label">Last name:</label>
+                                    <input type="text" class="form-control" id="validationDefault02" required>
+                                </div>
+                                <div class="pb-3">
+                                    <label for="validationDefault05" class="form-label">Email/Phone:</label>
+                                    <input type="text" class="form-control" id="validationDefault05" required>
+                                </div>
+                                <div class="pb-3">
+                                    <label for="validationDefault05" class="form-label">Password:</label>
+                                    <input type="password" class="form-control" id="validationDefault05" required>
+                                </div>
+                                <div>
+                                    <div class="form-check pb-3">
+                                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck2"
+                                            required>
+                                        <label class="form-check-label" for="invalidCheck2">
+                                            Agree to terms and conditions
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="align-self-center">
+                                    <button class="btn btn-primary" type="submit">Submit</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- caraousel -->
+        <div id="carouselId" class="carousel slide carousel-fade" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselId" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselId" data-slide-to="1"></li>
+                <li data-target="#carouselId" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                    <img data-src="holder.js/1400x900/auto/#777:#555/text:First slide" src="pexels-pixabay-257904.jpg"
+                        alt="First slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>More than 25k+ Learners family</h3>
+                        <p>You believed and we kept on serving with extraordinary content.</p>
+                        <a href="https://www.youtube.com/eternitylearners"><button type="button"
+                                class="btn btn-success">Youtube</button></a>
+                        <a href="https://www.instagram.com/eternitylearners"><button type="button"
+                                class="btn btn-danger">Instagram</button></a>
+                        <a href="https://www.facebook.com/eternitylearners"><button type="button"
+                                class="btn btn-success">Facebook</button></a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img data-src="holder.js/1400x900/auto/#666:#444/text:Second slide"
+                        src="pexels-john-taran-166597215-10933699.jpg" alt="Second slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>Mastered Mobile Music production</h3>
+                        <p>With 3+ years of experience in advance music production techniques we kept on raising
+                            awareness
+                            among new beginners.</p>
+                        <a href="https://www.instagram.com/stories/highlights/17933425462950627/"><button type="button"
+                                class="btn btn-primary">Milestones</button></a>
+                        <a href="https://www.instagram.com/stories/highlights/18000414944496591/"><button type="button"
+                                class="btn btn-secondary">Achievements</button></a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img data-src="holder.js/1400x900/auto/#666:#444/text:Third slide" src="pexels-kaip-1128440.jpg"
+                        alt="Third slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>Not just words but an Emotion</h3>
+                        <p>Connected and provided fine music content to our curious Learners despite of whatever
+                            financial
+                            background they come from.</p>
+                        <a href="https://www.instagram.com/stories/highlights/18200676601209407/"><button type="button"
+                                class="btn btn-success">Our Initiative</button></a>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselId" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselId" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+        <!-- Jumbotron -->
+        <div class="container my-5">
+            <div class="p-5 text-center bg-body-tertiary rounded-3">
+                <img class="bi mt-4 mb-3" style="color: var(--bs-indigo);" width="100" height="100"
+                    src="channels4_profile.jpg">
+                <h1 class="text-body-emphasis">Welcome to the School of Learners</h1>
+                <p class="col-lg-8 mx-auto fs-5 text-muted">
+                    Where passion meets potential. Curious why we're the <code>BEST</code> in education? Dive in and
+                    discover today!
+                </p>
+                <div class="d-inline-flex gap-2 mb-5">
+                    <a href="#cards"><button
+                            class="d-inline-flex align-items-center btn btn-primary btn-lg px-4 rounded-pill"
+                            type="button">
+                            Know more
+                        </button></a>
+                </div>
+            </div>
+        </div>
+        <!-- Cards -->
+        <div class="container my-4" id="cards">
+            <div class="row row-cols-1 row-cols-md-2 g-4 mb-4">
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="viral.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <strong class="d-inline-block mb-2 text-success">Tutorials</strong>
+                            <h5 class="card-title">Remake Viral songs in your Mobile</h5>
+                            <p class="card-text">Remake Latest Trending & viral songs in your mobile phones with the
+                                help of
+                                our step by step guided Tutorials.</p>
+                            <a href="https://youtube.com/playlist?list=PLGLUTi2Lfc4mwH4cj3wuy4HBkW8vA9Bkx&si=Em3qmlP8Wqr8QeFl"
+                                class="stretched-link">
+                                Learn more
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="bandlabcourse.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <strong class="d-inline-block mb-2 text-success">Courses</strong>
+                            <h5 class="card-title">Learn Music Production for Free</h5>
+                            <p class="card-text">Have some financial issue or lack of instruments? Don't worry we've got
+                                your
+                                back.</p>
+                            <a href="https://youtube.com/playlist?list=PLGLUTi2Lfc4lqeGrR7x2sTZRNhOxlHe56&si=Y_9e_f2uqLqrLVQF"
+                                class="stretched-link">
+                                Learn more
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="create.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <strong class="d-inline-block mb-2 text-success">Services</strong>
+                            <h5 class="card-title">Turn your Imagination into Reality</h5>
+                            <p class="card-text">Low on budget? Have no idea or Knowledege on how to turn musical idea
+                                into a beautiful track? Look no more.</p>
+                            <a href="music-production.html" class="stretched-link">
+                                Learn more
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-md-2 g-4 mb-4">
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="seeing-and-taking-initiative.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <strong class="d-inline-block mb-2 text-success">About</strong>
+                            <h5 class="card-title">Enchanting melodies throughout the globe</h5>
+                            <p class="card-text">On our mission to empower new upcoming musicians here's what we've
+                                achieved so far.</p>
+                            <a href="https://www.instagram.com/stories/highlights/18166344994205119/"
+                                class="stretched-link">
+                                Learn more
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="mashyup.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Create Mashups like a Pro</h5>
+                            <p class="card-text">Ever wondered how the beautiful compilation of 2-5 or more songs are
+                                made? Let's learn to cook it in our mobile phones.</p>
+                            <a href="https://youtube.com/playlist?list=PLGLUTi2Lfc4lSHDSkaAYW_zT71J8a0A2N&si=4Yakv_jGH9xWw77f"
+                                class="stretched-link">
+                                Learn more
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="lofi2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Make Lo-fi for study nights</h5>
+                            <p class="card-text">Bring the softness of your favorite songs out.</p>
+                            <a href="https://youtube.com/playlist?list=PLGLUTi2Lfc4kLttQ-bwaa2M6t24-55tla&si=iBHcGAZwMl3Bvsfm"
+                                class="stretched-link">
+                                Learn more
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <div class="container">
+            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+                <p class="col-md-4 mb-0 text-body-secondary">© 2024 Eternity Learners</p>
+
+                <ul class="nav col-md-4 justify-content-end">
+                    <li class="nav-item"><a href="https://www.youtube.com/eternitylearners"
+                            class="nav-link px-2 text-body-secondary">Youtube</a></li>
+                    <li class="nav-item"><a href="https://discord.com/invite/Ftw2SbTxFQ"
+                            class="nav-link px-2 text-body-secondary">Discord</a></li>
+                    <li class="nav-item"><a href="https://www.instagram.com/eternitylearners"
+                            class="nav-link px-2 text-body-secondary">Instagram</a></li>
+                    <li class="nav-item"><a href="https://www.linkedin.com/company/eternitylearners"
+                            class="nav-link px-2 text-body-secondary">LinkedIn</a></li>
+                </ul>
+            </footer>
+        </div>
+
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
