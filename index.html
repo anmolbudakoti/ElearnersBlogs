@@ -5,7 +5,7 @@
     <title>Eternity Learners - School of Learners</title>
     <link rel="shortcut icon" href="channels4_profile.jpg" type="image/x-icon">
     <style>
-         *{
+        *{
             font-family:Verdana, Geneva, Tahoma, sans-serif;
         }
         body {
@@ -13,6 +13,7 @@
             width: 100vw;
             overflow-x: hidden;
         }
+
         .carousel-inner img {
             height: 512px;
             width: 100%;
@@ -25,15 +26,18 @@
 
         .Main {
             background-color: rgb(0, 0, 0);
+            /* overflow: hidden; */
         }
 
         .text-body-emphasis {
             color: white;
         }
+
         .buttonInput {
             display: flex;
             justify-content: center;
         }
+
         @media (max-width: 576px) {
             .row-cols-1 .col {
                 flex: 0 0 100%;
@@ -54,11 +58,10 @@
     <div class="Main">
 
         <!-- Navigation bar -->
-        <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-xl navbar-dark bg-dark d-flex">
             <a class="navbar-brand" href="index.html">Eternity Learners</a>
-            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
-                data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
-                aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+                aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="collapsibleNavId">
@@ -84,101 +87,104 @@
                         <a class="nav-link" href="contact.html">Contact</a>
                     </li>
                 </ul>
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="text" placeholder="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                </form>
-                <div class="mx-2">
-                    <!-- Login trigger modal -->
-                    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#loginModal">
-                        Login
+
+                <div class="buttonInput">
+                    <div class="mx-2">
+                        <!-- Login trigger modal -->
+                        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#loginModal">
+                            Login
+                        </button>
+
+                        <!--Login Modal -->
+                        <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title fs-5" id="loginModalLabel">Login to Eternity Learners
+                                        </h5>
+                                        <button type="button" class="close" data-dismiss="modal"
+                                            aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form>
+                                            <div class="mb-3">
+                                                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                                    aria-describedby="emailHelp">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="exampleInputPassword1" class="form-label">Password</label>
+                                                <input type="password" class="form-control" id="exampleInputPassword1">
+                                            </div>
+                                            <div class="mb-3 form-check">
+                                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                <label class="form-check-label" for="exampleCheck1">Remember me</label>
+                                            </div>
+                                            <button type="submit" class="btn btn-primary">Submit</button>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sign Up trigger modal -->
+                    <button type="button" class="btn btn-danger mr-4" data-toggle="modal" data-target="#signupModal">
+                        Sign up
                     </button>
 
-                    <!--Login Modal -->
-                    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel"
+                    <!--Sign Up Modal -->
+                    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel"
                         aria-hidden="true">
                         <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h5 class="modal-title fs-5" id="loginModalLabel">Login to Eternity Learners</h5>
+                                    <h5 class="modal-title fs-5" id="signupModalLabel">Be a Part of Learners family</h5>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
                                             aria-hidden="true">&times;</span></button>
                                 </div>
                                 <div class="modal-body">
-                                    <form>
-                                        <div class="mb-3">
-                                            <label for="exampleInputEmail1" class="form-label">Email address</label>
-                                            <input type="email" class="form-control" id="exampleInputEmail1"
-                                                aria-describedby="emailHelp">
+                                    <form class="d-flex flex-column justify-content-between px-5">
+                                        <div class="pb-3">
+                                            <label for="validationDefault01" class="form-label">First name:</label>
+                                            <input type="text" class="form-control" id="validationDefault01" required>
                                         </div>
-                                        <div class="mb-3">
-                                            <label for="exampleInputPassword1" class="form-label">Password</label>
-                                            <input type="password" class="form-control" id="exampleInputPassword1">
+                                        <div class="pb-3">
+                                            <label for="validationDefault02" class="form-label">Last name:</label>
+                                            <input type="text" class="form-control" id="validationDefault02" required>
                                         </div>
-                                        <div class="mb-3 form-check">
-                                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                            <label class="form-check-label" for="exampleCheck1">Remember me</label>
+                                        <div class="pb-3">
+                                            <label for="validationDefault05" class="form-label">Email/Phone:</label>
+                                            <input type="text" class="form-control" id="validationDefault05" required>
                                         </div>
-                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                        <div class="pb-3">
+                                            <label for="validationDefault05" class="form-label">Password:</label>
+                                            <input type="password" class="form-control" id="validationDefault05"
+                                                required>
+                                        </div>
+                                        <div>
+                                            <div class="form-check pb-3">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="invalidCheck2" required>
+                                                <label class="form-check-label" for="invalidCheck2">
+                                                    Agree to terms and conditions
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="align-self-center">
+                                            <button class="btn btn-primary" type="submit">Submit</button>
+                                        </div>
                                     </form>
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Sign Up trigger modal -->
-            <button type="button" class="btn btn-danger mr-4" data-toggle="modal" data-target="#signupModal">
-                Sign up
-            </button>
-
-            <!--Sign Up Modal -->
-            <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title fs-5" id="signupModalLabel">Be a Part of Learners family</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-                                    aria-hidden="true">&times;</span></button>
-                        </div>
-                        <div class="modal-body">
-                            <form class="d-flex flex-column justify-content-between px-5">
-                                <div class="pb-3">
-                                    <label for="validationDefault01" class="form-label">First name:</label>
-                                    <input type="text" class="form-control" id="validationDefault01" required>
-                                </div>
-                                <div class="pb-3">
-                                    <label for="validationDefault02" class="form-label">Last name:</label>
-                                    <input type="text" class="form-control" id="validationDefault02" required>
-                                </div>
-                                <div class="pb-3">
-                                    <label for="validationDefault05" class="form-label">Email/Phone:</label>
-                                    <input type="text" class="form-control" id="validationDefault05" required>
-                                </div>
-                                <div class="pb-3">
-                                    <label for="validationDefault05" class="form-label">Password:</label>
-                                    <input type="password" class="form-control" id="validationDefault05" required>
-                                </div>
-                                <div>
-                                    <div class="form-check pb-3">
-                                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck2"
-                                            required>
-                                        <label class="form-check-label" for="invalidCheck2">
-                                            Agree to terms and conditions
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="align-self-center">
-                                    <button class="btn btn-primary" type="submit">Submit</button>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                         </div>
                     </div>
                 </div>
@@ -264,11 +270,12 @@
             </div>
         </div>
         <!-- Cards -->
-        <div class="container my-4" id="cards">
+        <div class="container my-4 p-5" id="cards">
+
             <div class="row row-cols-1 row-cols-md-2 g-4 mb-4">
-                <div class="col">
+                <div class="col mt-4">
                     <div class="card h-100">
-                        <img src="viral.jpg" class="card-img-top" alt="...">
+                        <img src="viral.jpg" class="card-img-top" alt="..." height="200px" width="300px">
                         <div class="card-body">
                             <strong class="d-inline-block mb-2 text-success">Tutorials</strong>
                             <h5 class="card-title">Remake Viral songs in your Mobile</h5>
@@ -282,9 +289,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col mt-4">
                     <div class="card h-100">
-                        <img src="bandlabcourse.jpg" class="card-img-top" alt="...">
+                        <img src="bandlabcourse.jpg" class="card-img-top" alt="..." height="200px" width="300px">
                         <div class="card-body">
                             <strong class="d-inline-block mb-2 text-success">Courses</strong>
                             <h5 class="card-title">Learn Music Production for Free</h5>
@@ -298,9 +305,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col mt-4">
                     <div class="card h-100">
-                        <img src="create.jpg" class="card-img-top" alt="...">
+                        <img src="create.jpg" class="card-img-top" alt="..." height="200px" width="300px">
                         <div class="card-body">
                             <strong class="d-inline-block mb-2 text-success">Services</strong>
                             <h5 class="card-title">Turn your Imagination into Reality</h5>
@@ -314,9 +321,10 @@
                 </div>
             </div>
             <div class="row row-cols-1 row-cols-md-2 g-4 mb-4">
-                <div class="col">
+                <div class="col mt-4">
                     <div class="card h-100">
-                        <img src="seeing-and-taking-initiative.jpg" class="card-img-top" alt="...">
+                        <img src="seeing-and-taking-initiative.jpg" class="card-img-top" alt="..." height="200px"
+                            width="300px">
                         <div class="card-body">
                             <strong class="d-inline-block mb-2 text-success">About</strong>
                             <h5 class="card-title">Enchanting melodies throughout the globe</h5>
@@ -329,10 +337,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col mt-4">
                     <div class="card h-100">
-                        <img src="mashyup.jpg" class="card-img-top" alt="...">
+                        <img src="mashyup.jpg" class="card-img-top" alt="..." height="200px" width="300px">
                         <div class="card-body">
+                            <strong class="d-inline-block mb-2 text-success">Latest</strong>
                             <h5 class="card-title">Create Mashups like a Pro</h5>
                             <p class="card-text">Ever wondered how the beautiful compilation of 2-5 or more songs are
                                 made? Let's learn to cook it in our mobile phones.</p>
@@ -343,10 +352,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col mt-4">
                     <div class="card h-100">
-                        <img src="lofi2.jpg" class="card-img-top" alt="...">
+                        <img src="lofi2.jpg" class="card-img-top" alt="..." height="200px" width="300px">
                         <div class="card-body">
+                            <strong class="d-inline-block mb-2 text-success">Popular</strong>
                             <h5 class="card-title">Make Lo-fi for study nights</h5>
                             <p class="card-text">Bring the softness of your favorite songs out.</p>
                             <a href="https://youtube.com/playlist?list=PLGLUTi2Lfc4kLttQ-bwaa2M6t24-55tla&si=iBHcGAZwMl3Bvsfm"
@@ -362,7 +372,7 @@
         <!-- footer -->
         <div class="container">
             <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-                <p class="col-md-4 mb-0 text-body-secondary">© 2024 Eternity Learners</p>
+                <p class="col-md-4 mb-0 text-body-secondary text-light">© 2024 Eternity Learners</p>
 
                 <ul class="nav col-md-4 justify-content-end">
                     <li class="nav-item"><a href="https://www.youtube.com/eternitylearners"
