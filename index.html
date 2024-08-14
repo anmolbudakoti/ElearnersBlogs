@@ -5,6 +5,14 @@
     <title>Eternity Learners - School of Learners</title>
     <link rel="shortcut icon" href="channels4_profile.jpg" type="image/x-icon">
     <style>
+         *{
+            font-family:Arial, Helvetica, sans-serif;
+        }
+        body {
+            height: 100vh;
+            width: 100vw;
+            overflow-x: hidden;
+        }
         .carousel-inner img {
             height: 512px;
             width: 100%;
@@ -22,6 +30,16 @@
         .text-body-emphasis {
             color: white;
         }
+        .buttonInput {
+            display: flex;
+            justify-content: center;
+        }
+        @media (max-width: 576px) {
+            .row-cols-1 .col {
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+        }
     </style>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -37,7 +55,7 @@
 
         <!-- Navigation bar -->
         <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
-            <a class="navbar-brand" href="index.html">Eternity Learners</a>
+            <a class="navbar-brand" href="index.html" style="font-size: 30px;">Eternity Learners</a>
             <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
                 data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -113,7 +131,7 @@
                 </div>
             </div>
             <!-- Sign Up trigger modal -->
-            <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#signupModal">
+            <button type="button" class="btn btn-danger mr-4" data-toggle="modal" data-target="#signupModal">
                 Sign up
             </button>
 
@@ -178,7 +196,7 @@
                 <div class="carousel-item active">
                     <img data-src="holder.js/1400x900/auto/#777:#555/text:First slide" src="pexels-pixabay-257904.jpg"
                         alt="First slide">
-                    <div class="carousel-caption d-none d-md-block">
+                    <div class="carousel-caption">
                         <h3>More than 25k+ Learners family</h3>
                         <p>You believed and we kept on serving with extraordinary content.</p>
                         <a href="https://www.youtube.com/eternitylearners"><button type="button"
@@ -192,7 +210,7 @@
                 <div class="carousel-item">
                     <img data-src="holder.js/1400x900/auto/#666:#444/text:Second slide"
                         src="pexels-john-taran-166597215-10933699.jpg" alt="Second slide">
-                    <div class="carousel-caption d-none d-md-block">
+                    <div class="carousel-caption">
                         <h3>Mastered Mobile Music production</h3>
                         <p>With 3+ years of experience in advance music production techniques we kept on raising
                             awareness
@@ -206,7 +224,7 @@
                 <div class="carousel-item">
                     <img data-src="holder.js/1400x900/auto/#666:#444/text:Third slide" src="pexels-kaip-1128440.jpg"
                         alt="Third slide">
-                    <div class="carousel-caption d-none d-md-block">
+                    <div class="carousel-caption">
                         <h3>Not just words but an Emotion</h3>
                         <p>Connected and provided fine music content to our curious Learners despite of whatever
                             financial
